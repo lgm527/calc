@@ -1,0 +1,51 @@
+.calc {
+  margin-left: 40%;
+  margin-top: 5%;
+  padding: 3em;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  width: 23em;
+  height: 45em;
+  background-color: gray;
+  border-radius: 15px;
+}
+
+.nButton, .input {
+  font-size: 20px;
+  width: 4em;
+  height: 4em;
+  padding: .5em;
+  margin-right: .3em;
+  margin-left: .3em;
+  border: 3px solid rgba(0, 0, 0, .5);
+  border-radius: 15px;
+}
+
+.input {
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.nButton {
+  cursor: pointer;
+}
+
+.nButton:hover {
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  background-color: rgba(255, 255, 255, .3);
+  border: 3px solid rgba(255, 255, 255, .1);
+  font-weight: bold;
+}
+
+#current {
+  width: 10em;
+}
+
+.past {
+  padding: 1em;
+  border: 1px solid black;
+  margin-top: 2%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
