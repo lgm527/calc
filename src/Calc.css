@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(https://fonts.googleapis.com/css?family=Saira+Condensed&display=swap);
+
 .calc {
   margin-left: 40%;
   margin-top: 5%;
@@ -7,7 +10,7 @@
   align-content: space-between;
   width: 23em;
   height: 45em;
-  background-color: gray;
+  background-color: silver;
   border-radius: 15px;
 }
 
@@ -23,10 +26,12 @@
 }
 
 .input {
+  font-family: 'Saira Condensed', sans-serif;
   background-color: rgba(255, 255, 255, .5);
 }
 
 .nButton {
+  font-family: 'Press Start 2P', cursive;
   cursor: pointer;
 }
 
@@ -40,6 +45,7 @@
 
 #current {
   width: 10em;
+  overflow-wrap: break-word;
 }
 
 .past {
@@ -48,4 +54,5 @@
   margin-top: 2%;
   margin-left: 30%;
   margin-right: 30%;
+  overflow-wrap: break-word;
 }

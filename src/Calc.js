@@ -38,7 +38,7 @@ export default class Calc extends React.Component {
 
       <div className='calc'>
 
-      <div className='nButton' onClick={event => this.clearIt(event)}>clear</div>
+      <div className='nButton' onClick={event => this.clearIt(event)}>C</div>
       <div className='input' id='current'>{this.state.math}</div>
 
 
