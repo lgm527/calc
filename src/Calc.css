@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 @import url(https://fonts.googleapis.com/css?family=Saira+Condensed&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Bangers&display=swap);
 
 .calc {
   margin-left: 40%;
@@ -8,17 +9,29 @@
   display: flex;
   flex-flow: row wrap;
   align-content: space-between;
-  width: 23em;
-  height: 45em;
+  width: 22em;
+  height: 55em;
   background-color: silver;
-  border-radius: 15px;
+  border-radius: 200px 200px 0 0;
+  -webkit-mask-image: url("grit.png");
+  mask-image: url("grit.png");
+  border-right: 50px solid gray;
+}
+
+.title {
+  font-family: 'Bangers', cursive;
+  display: block;
+  width: 100%;
+  font-size: 3em;
 }
 
 .nButton, .input {
-  font-size: 20px;
-  width: 4em;
-  height: 4em;
-  padding: .5em;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+  width: 2em;
+  height: 2em;
+  padding: 3%;
   margin-right: .3em;
   margin-left: .3em;
   border: 3px solid rgba(0, 0, 0, .5);
@@ -44,15 +57,33 @@
 }
 
 #current {
-  width: 10em;
+  width: 5.5em;
   overflow-wrap: break-word;
 }
 
 .past {
-  padding: 1em;
-  border: 1px solid black;
-  margin-top: 2%;
-  margin-left: 30%;
-  margin-right: 30%;
+  color: white;
+  font-family: 'Saira Condensed', sans-serif;
+  position: absolute;
+  margin-bottom: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 3em;
   overflow-wrap: break-word;
+}
+
+.past::after {
+  content: "";
+  background-image: url('grass');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.past > h3 {
+  font-family: 'Bangers', cursive;
 }

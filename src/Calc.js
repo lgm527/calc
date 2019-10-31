@@ -38,6 +38,8 @@ export default class Calc extends React.Component {
 
       <div className='calc'>
 
+      <div className='title'>calculate if you dare...</div>
+
       <div className='nButton' onClick={event => this.clearIt(event)}>C</div>
       <div className='input' id='current'>{this.state.math}</div>
 
@@ -60,7 +62,7 @@ export default class Calc extends React.Component {
 
       </div>
 
-      <div className='past'>Past: {pastMath}</div>
+      <div className='past'><h3>Past:</h3> {pastMath}</div>
 
       </div>
     )
