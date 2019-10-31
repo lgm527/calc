@@ -59,6 +59,7 @@
 #current {
   width: 5.5em;
   overflow-wrap: break-word;
+  overflow: scroll;
 }
 
 .past {
